@@ -48,20 +48,43 @@ header {
             }
             
             &--buton {
-                padding: 20px;
-                box-sizing: border-box;
-                display: block;
-                border-radius: 30px;
-                font-family: Roboto;
-                color: white;
-                background: #9d4db9;
-                background: linear-gradient(354deg,#9d4db9 0%, #e263c4 80%);
-                font-weight: bold;
-                border: none;
+               @include button;
                 
             }
         
         }
+    }
+}
+.header__page{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &--arrow{
+        position: absolute;
+        left: 5%;
+        color: black;
+
+
+        i{
+            font-size: 20px;
+            transform: scale(1);
+            transition-property: transform;
+            transition-duration: 1000ms;
+            
+            &:hover {
+                transform: scale(1.5);
+                background: linear-gradient(20deg, #ff79da 15%, #9356dc 100%);
+                -webkit-background-clip: text;
+                -moz-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                
+            }
+
+        }
+
     }
 
 }

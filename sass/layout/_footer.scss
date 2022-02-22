@@ -1,0 +1,30 @@
+
+  footer {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #323232;
+    box-sizing: border-box;
+    h2 {
+    @include titre-footer;
+  }
+  .liens {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+  
+    a {
+      margin-bottom: 10px;
+      text-decoration: none;
+      color: white;
+    }
+
+    i {
+      margin-right: 10px;
+      font-size: 10px;
+      font-weight: 900;
+    }
+  }
+  }

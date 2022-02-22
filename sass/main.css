@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap%22");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap%22");
 body {
   background-color: white;
   margin: 0;
@@ -108,17 +109,58 @@ header .text__description a {
 }
 
 header .text__description--buton {
-  padding: 20px;
+  padding: 15px 25px 15px 25px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  display: block;
-  border-radius: 30px;
-  font-family: Roboto;
-  color: white;
-  background: #9d4db9;
-  background: linear-gradient(354deg, #9d4db9 0%, #e263c4 80%);
-  font-weight: bold;
+  border-radius: 50px;
   border: none;
+  font-family: Roboto;
+  font-weight: bold;
+  background: #9356dc;
+  background: linear-gradient(350deg, #9356dc 0%, #ff79da 100%);
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.header__page {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__page--arrow {
+  position: absolute;
+  left: 5%;
+  color: black;
+}
+
+.header__page--arrow i {
+  font-size: 20px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 1000ms;
+          transition-duration: 1000ms;
+}
+
+.header__page--arrow i:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  background: linear-gradient(20deg, #ff79da 15%, #9356dc 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 nav {
@@ -163,7 +205,7 @@ nav .navigation__button--text {
 }
 
 nav .navigation__button--text .notif {
-  background-color: #923af7;
+  background-color: #9356dc;
   border-radius: 100%;
   padding: 5px 10px;
   position: absolute;
@@ -220,14 +262,82 @@ section .carte__text--name p {
   font-size: 17px;
 }
 
-section .carte__text i {
-  margin: 0 30px;
-  font-size: 30px;
+section .carte__text .fa-regular {
+  margin: 10px;
+  font-size: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 1000ms;
+          transition-duration: 1000ms;
 }
 
-section .carte__text i:hover {
+section .carte__text .fa-regular:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  font-size: 30px;
   font-weight: 600;
-  color: #9d4db9;
-  color: linear-gradient(354deg, #9d4db9 0%, #fcd0f2 80%);
+  background: linear-gradient(20deg, #ff79da 15%, #9356dc 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+footer {
+  width: 100%;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background-color: #323232;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+footer h2 {
+  color: #fff;
+  font-size: 17px;
+  font-family: Shrikhand;
+  margin: 0px 0px 10px 0px;
+  font-weight: 100;
+}
+
+footer .liens {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .liens a {
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+footer .liens i {
+  margin-right: 10px;
+  font-size: 10px;
+  font-weight: 900;
 }
 /*# sourceMappingURL=main.css.map */

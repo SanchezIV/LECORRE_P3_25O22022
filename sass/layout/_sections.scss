@@ -36,17 +36,27 @@ section {
             }
             
             
-            i {
-                margin: 0 30px;
+            .fa-regular {
+                margin: 10px;
+                font-size: 25px;
+                display: flex;
+                align-items: center;
+                transform: scale(1);
+                transition-property: transform;
+                transition-duration: 1000ms;
+              }
+              .fa-regular:hover {
+                transform: scale(1.5);
                 font-size: 30px;
-
-                &:hover {
-                    font-weight: 600;
-                    color: #9d4db9;
-                    color: linear-gradient(354deg,#9d4db9 0%, #fcd0f2 80%);
-                
-                }
-            }
+                font-weight: 600;
+                background: -moz-linear-gradient(top, #ff79da 15%, #9356dc 100%);
+                background: -webkit-linear-gradient(top, #ff79da 15%, #9356dc 100%);
+                background: linear-gradient(20deg, #ff79da 15%, #9356dc 100%);
+                -webkit-background-clip: text;
+                -moz-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+              }
         }
     }
 }

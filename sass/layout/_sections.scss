@@ -85,6 +85,7 @@ section {
                 font-size: medium;
                 line-height: 2;
             }
+
             &__titre {
                 position: relative;
                 margin-top: 30px;
@@ -190,41 +191,8 @@ section {
         }
     }
 
-    .button {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        
-
-        
-        
-
-        .button__link {
-        padding: 15px 25px 15px 25px;
-        box-sizing: border-box;
-        border-radius: 50px;
-        border: none;
-        font-family: Roboto;
-        font-weight: bold;
-        background: rgb(147, 86, 220);
-        background: linear-gradient(
-        350deg,
-        rgba(147, 86, 220, 1) 0%,
-        rgba(255, 121, 218, 1) 100%
-        );
-        color: #fff;
-        cursor: pointer;
-        text-decoration: none;
-        width: 50%;
-        text-align: center;
-        margin-bottom: 20px;
-        display: block;
-        box-shadow: 2px 5px 7px rgb(192, 187, 187);
-        
-            &:hover {
-            box-shadow: 2px 5px 7px rgb(109, 109, 109);
-            }
-        }
+    .bouton {
+      @include button;
     }
     
 }

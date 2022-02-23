@@ -56,6 +56,8 @@ h2 {
 
 .coeur .fa-regular {
   position: absolute;
+  -webkit-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
 }
 
 .coeur .fa-solid {
@@ -64,6 +66,8 @@ h2 {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  -webkit-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
 }
 
 header {
@@ -140,7 +144,23 @@ header .text__description a {
   text-decoration: none;
 }
 
-header .text__description--buton {
+header .text__description--bouton {
+  width: 150%;
+}
+
+header .text__description--bouton .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .text__description--bouton .button .button__link {
   padding: 15px 25px 15px 25px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -153,6 +173,17 @@ header .text__description--buton {
   color: #fff;
   cursor: pointer;
   text-decoration: none;
+  width: 50%;
+  text-align: center;
+  margin-bottom: 20px;
+  display: block;
+  -webkit-box-shadow: 2px 5px 7px #c0bbbb;
+          box-shadow: 2px 5px 7px #c0bbbb;
+}
+
+header .text__description--bouton .button .button__link:hover {
+  -webkit-box-shadow: 2px 5px 7px #6d6d6d;
+          box-shadow: 2px 5px 7px #6d6d6d;
 }
 
 .header__page {
@@ -312,6 +343,8 @@ section .carte__text .fa-heart .coeur .fa-heart {
 
 section .carte__text .fa-heart .coeur .fa-regular {
   position: absolute;
+  -webkit-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
 }
 
 section .carte__text .fa-heart .coeur .fa-solid {
@@ -320,6 +353,8 @@ section .carte__text .fa-heart .coeur .fa-solid {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  -webkit-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
 }
 
 .sectionp {
@@ -377,6 +412,8 @@ section .carte__text .fa-heart .coeur .fa-solid {
 
 .sectionp__carte--titre .fa-heart .coeur .fa-regular {
   position: absolute;
+  -webkit-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
 }
 
 .sectionp__carte--titre .fa-heart .coeur .fa-solid {
@@ -385,6 +422,8 @@ section .carte__text .fa-heart .coeur .fa-solid {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  -webkit-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
 }
 
 .sectionp__carte .epd {
@@ -519,7 +558,7 @@ section .carte__text .fa-heart .coeur .fa-solid {
   transition: transform 1000ms ease-in-out, -webkit-transform 1000ms ease-in-out;
 }
 
-.sectionp .button {
+.sectionp .bouton .button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -531,7 +570,7 @@ section .carte__text .fa-heart .coeur .fa-solid {
           justify-content: center;
 }
 
-.sectionp .button .button__link {
+.sectionp .bouton .button .button__link {
   padding: 15px 25px 15px 25px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -552,7 +591,7 @@ section .carte__text .fa-heart .coeur .fa-solid {
           box-shadow: 2px 5px 7px #c0bbbb;
 }
 
-.sectionp .button .button__link:hover {
+.sectionp .bouton .button .button__link:hover {
   -webkit-box-shadow: 2px 5px 7px #6d6d6d;
           box-shadow: 2px 5px 7px #6d6d6d;
 }

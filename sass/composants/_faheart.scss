@@ -17,6 +17,7 @@
     }
     .fa-regular {
     position: absolute;
+    transition: 0.5s ease-in;
     }
     .fa-solid {
     opacity: 0;
@@ -27,7 +28,7 @@
     -moz-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    
+    transition: 0.5s ease-out;
     } 
 }
 

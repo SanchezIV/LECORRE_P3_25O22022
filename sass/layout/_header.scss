@@ -47,8 +47,9 @@ header {
                 text-decoration: none;
             }
             
-            &--buton {
+            &--bouton {
                @include button;
+               width: 150%;
                 
             }
         

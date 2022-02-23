@@ -38,6 +38,34 @@ h2 {
   font-family: Roboto;
 }
 
+.coeur:hover .fa-regular {
+  opacity: 0;
+  -webkit-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
+}
+
+.coeur:hover .fa-solid {
+  -webkit-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+  opacity: 1;
+}
+
+.coeur .fa-heart {
+  font-size: 30px;
+}
+
+.coeur .fa-regular {
+  position: absolute;
+}
+
+.coeur .fa-solid {
+  opacity: 0;
+  background: linear-gradient(20deg, #ff79da 15%, #9356dc 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -266,30 +294,28 @@ section .carte__text--name p {
   font-size: 17px;
 }
 
-section .carte__text .fa-regular {
-  margin: 10px;
-  font-size: 25px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  -webkit-transition-property: -webkit-transform;
-  transition-property: -webkit-transform;
-  transition-property: transform;
-  transition-property: transform, -webkit-transform;
-  -webkit-transition-duration: 1000ms;
-          transition-duration: 1000ms;
+section .carte__text .fa-heart .coeur:hover .fa-regular {
+  opacity: 0;
+  -webkit-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
 }
 
-section .carte__text .fa-regular:hover {
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
+section .carte__text .fa-heart .coeur:hover .fa-solid {
+  -webkit-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+  opacity: 1;
+}
+
+section .carte__text .fa-heart .coeur .fa-heart {
   font-size: 30px;
-  font-weight: 600;
+}
+
+section .carte__text .fa-heart .coeur .fa-regular {
+  position: absolute;
+}
+
+section .carte__text .fa-heart .coeur .fa-solid {
+  opacity: 0;
   background: linear-gradient(20deg, #ff79da 15%, #9356dc 100%);
   -webkit-background-clip: text;
   background-clip: text;
@@ -333,22 +359,32 @@ section .carte__text .fa-regular:hover {
   text-align: center;
 }
 
-.sectionp__carte--titre .fa-heart {
-  font-weight: 200;
-  font-size: 30px;
-  color: black;
-  -webkit-transition: 1s ease-in-out;
-  transition: 1s ease-in-out;
-  background-image: radial-gradient(circle, purple, pink);
-  -webkit-background-clip: text;
-  background-clip: text;
+.sectionp__carte--titre .fa-heart .coeur:hover .fa-regular {
+  opacity: 0;
+  -webkit-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
 }
 
-.sectionp__carte--titre .fa-heart:hover {
-  color: transparent;
-  -webkit-transition: 1s ease-in-out;
-  transition: 1s ease-in-out;
-  font-weight: 600;
+.sectionp__carte--titre .fa-heart .coeur:hover .fa-solid {
+  -webkit-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+  opacity: 1;
+}
+
+.sectionp__carte--titre .fa-heart .coeur .fa-heart {
+  font-size: 30px;
+}
+
+.sectionp__carte--titre .fa-heart .coeur .fa-regular {
+  position: absolute;
+}
+
+.sectionp__carte--titre .fa-heart .coeur .fa-solid {
+  opacity: 0;
+  background: linear-gradient(20deg, #ff79da 15%, #9356dc 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .sectionp__carte .epd {
@@ -371,7 +407,7 @@ section .carte__text .fa-regular:hover {
   content: '';
   position: absolute;
   background-color: #99e2d0;
-  width: 17%;
+  width: 9%;
   height: 3px;
   bottom: 0;
   left: 0;

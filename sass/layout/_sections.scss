@@ -36,26 +36,8 @@ section {
             }
             
             
-            .fa-regular {
-                margin: 10px;
-                font-size: 25px;
-                display: flex;
-                align-items: center;
-                transform: scale(1);
-                transition-property: transform;
-                transition-duration: 1000ms;
-              }
-              .fa-regular:hover {
-                transform: scale(1.5);
-                font-size: 30px;
-                font-weight: 600;
-                background: -moz-linear-gradient(top, #ff79da 15%, #9356dc 100%);
-                background: -webkit-linear-gradient(top, #ff79da 15%, #9356dc 100%);
-                background: linear-gradient(20deg, #ff79da 15%, #9356dc 100%);
-                -webkit-background-clip: text;
-                -moz-background-clip: text;
-                background-clip: text;
-                -webkit-text-fill-color: transparent;
+            .fa-heart {
+               @import "../composants/faheart";
               }
         }
     }
@@ -89,20 +71,7 @@ section {
             }
 
             .fa-heart {
-                font-weight: 200;
-                font-size: 30px;
-                color: black; 
-                transition: 1s ease-in-out;
-                background-image: radial-gradient(circle, purple, pink);
-                -webkit-background-clip: text;
-                -moz-background-clip: text;
-                background-clip: text;
-                
-                &:hover {
-                    color: transparent;
-                    transition:1s ease-in-out;
-                    font-weight: 600;
-                }
+                @import "../composants/faheart";
             }
         }
         
@@ -124,7 +93,7 @@ section {
                     content: '';
                     position: absolute;
                     background-color: $color-tertiaire;
-                    width: 17%;
+                    width: 9%;
                     height: 3px;
                     bottom: 0;
                     left: 0;

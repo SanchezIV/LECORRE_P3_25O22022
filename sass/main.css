@@ -38,6 +38,25 @@ h2 {
   font-family: Roboto;
 }
 
+.coeur {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.coeur:hover .fa-heart {
+  font-size: 40px;
+  border: 4px solid #ffa7e2;
+  border-style: double;
+  border-radius: 100%;
+}
+
 .coeur:hover .fa-regular {
   opacity: 0;
   -webkit-transition: 0.5s ease-out;
@@ -45,9 +64,13 @@ h2 {
 }
 
 .coeur:hover .fa-solid {
+  width: 46px;
+  height: 46px;
+  border-radius: 1000%;
   -webkit-transition: 0.5s ease-in;
   transition: 0.5s ease-in;
   opacity: 1;
+  position: absolute;
 }
 
 .coeur .fa-heart {
@@ -56,12 +79,25 @@ h2 {
 
 .coeur .fa-regular {
   position: absolute;
+  opacity: 1;
   -webkit-transition: 0.5s ease-in;
   transition: 0.5s ease-in;
 }
 
 .coeur .fa-solid {
-  opacity: 0;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  opacity: 1;
+  width: 0;
+  height: 0;
   background: linear-gradient(20deg, #ff79da 15%, #9356dc 100%);
   -webkit-background-clip: text;
   background-clip: text;
@@ -145,7 +181,7 @@ header .text__description a {
 }
 
 header .text__description--bouton {
-  width: 150%;
+  width: 100%;
 }
 
 header .text__description--bouton .button {
@@ -325,6 +361,29 @@ section .carte__text--name p {
   font-size: 17px;
 }
 
+section .carte__text .fa-heart {
+  margin-right: 30px;
+}
+
+section .carte__text .fa-heart .coeur {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section .carte__text .fa-heart .coeur:hover .fa-heart {
+  font-size: 40px;
+  border: 4px solid #ffa7e2;
+  border-style: double;
+  border-radius: 100%;
+}
+
 section .carte__text .fa-heart .coeur:hover .fa-regular {
   opacity: 0;
   -webkit-transition: 0.5s ease-out;
@@ -332,9 +391,13 @@ section .carte__text .fa-heart .coeur:hover .fa-regular {
 }
 
 section .carte__text .fa-heart .coeur:hover .fa-solid {
+  width: 46px;
+  height: 46px;
+  border-radius: 1000%;
   -webkit-transition: 0.5s ease-in;
   transition: 0.5s ease-in;
   opacity: 1;
+  position: absolute;
 }
 
 section .carte__text .fa-heart .coeur .fa-heart {
@@ -343,12 +406,25 @@ section .carte__text .fa-heart .coeur .fa-heart {
 
 section .carte__text .fa-heart .coeur .fa-regular {
   position: absolute;
+  opacity: 1;
   -webkit-transition: 0.5s ease-in;
   transition: 0.5s ease-in;
 }
 
 section .carte__text .fa-heart .coeur .fa-solid {
-  opacity: 0;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  opacity: 1;
+  width: 0;
+  height: 0;
   background: linear-gradient(20deg, #ff79da 15%, #9356dc 100%);
   -webkit-background-clip: text;
   background-clip: text;
@@ -394,6 +470,25 @@ section .carte__text .fa-heart .coeur .fa-solid {
   text-align: center;
 }
 
+.sectionp__carte--titre .fa-heart .coeur {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sectionp__carte--titre .fa-heart .coeur:hover .fa-heart {
+  font-size: 40px;
+  border: 4px solid #ffa7e2;
+  border-style: double;
+  border-radius: 100%;
+}
+
 .sectionp__carte--titre .fa-heart .coeur:hover .fa-regular {
   opacity: 0;
   -webkit-transition: 0.5s ease-out;
@@ -401,9 +496,13 @@ section .carte__text .fa-heart .coeur .fa-solid {
 }
 
 .sectionp__carte--titre .fa-heart .coeur:hover .fa-solid {
+  width: 46px;
+  height: 46px;
+  border-radius: 1000%;
   -webkit-transition: 0.5s ease-in;
   transition: 0.5s ease-in;
   opacity: 1;
+  position: absolute;
 }
 
 .sectionp__carte--titre .fa-heart .coeur .fa-heart {
@@ -412,12 +511,25 @@ section .carte__text .fa-heart .coeur .fa-solid {
 
 .sectionp__carte--titre .fa-heart .coeur .fa-regular {
   position: absolute;
+  opacity: 1;
   -webkit-transition: 0.5s ease-in;
   transition: 0.5s ease-in;
 }
 
 .sectionp__carte--titre .fa-heart .coeur .fa-solid {
-  opacity: 0;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  opacity: 1;
+  width: 0;
+  height: 0;
   background: linear-gradient(20deg, #ff79da 15%, #9356dc 100%);
   -webkit-background-clip: text;
   background-clip: text;

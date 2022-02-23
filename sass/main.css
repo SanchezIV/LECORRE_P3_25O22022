@@ -34,6 +34,10 @@ section img {
   border-radius: 15px 15px 0px 0px;
 }
 
+h2 {
+  font-family: Roboto;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -290,6 +294,218 @@ section .carte__text .fa-regular:hover {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.sectionp {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sectionp img {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 0;
+}
+
+.sectionp__carte {
+  border-radius: 45px 45px 0 0;
+  padding: 10px;
+  position: relative;
+  margin-top: -50px;
+  background-color: #f6f6f6;
+}
+
+.sectionp__carte--titre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.sectionp__carte--titre h1 {
+  margin: 0;
+  font-family: Shrikhand;
+  text-align: center;
+}
+
+.sectionp__carte--titre .coeur {
+  font-size: 30px;
+  background-image: radial-gradient(circle, red 0%, #0088b5 100%);
+  background-position: center;
+  background-size: 600% 600%;
+  /*a big size to see only the red*/
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.sectionp__carte--titre .coeur:hover {
+  background-size: 150% 150%;
+  /* reduce the size to see the gadient effect*/
+  font-weight: 600;
+}
+
+.sectionp__carte .epd {
+  width: 100%;
+}
+
+.sectionp__carte .epd h2 {
+  margin: 20px 0 10px 20px;
+  font-weight: 400;
+  font-size: medium;
+  line-height: 2;
+}
+
+.sectionp__carte .epd__titre {
+  position: relative;
+  margin-top: 30px;
+}
+
+.sectionp__carte .epd__titre:after {
+  content: '';
+  position: absolute;
+  background-color: #99e2d0;
+  width: 15%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+}
+
+.sectionp__carte .epd a {
+  text-decoration: none;
+  color: black;
+}
+
+.sectionp__carte .epd__carte {
+  background-color: white;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  margin: 10px;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: padding-right 500ms ease-in-out;
+  transition: padding-right 500ms ease-in-out;
+  cursor: pointer;
+  -webkit-box-shadow: 2px 5px 7px #c0bbbb;
+          box-shadow: 2px 5px 7px #c0bbbb;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.sectionp__carte .epd__carte:hover {
+  -webkit-box-shadow: 2px 5px 7px #6d6d6d;
+          box-shadow: 2px 5px 7px #6d6d6d;
+}
+
+.sectionp__carte .epd__carte--text {
+  overflow: hidden;
+}
+
+.sectionp__carte .epd__carte--text h2 {
+  margin: 10px 0 5px 10px;
+  font-size: large;
+  font-weight: bold;
+  border: none;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sectionp__carte .epd__carte--text p {
+  margin: 0px 0 10px 10px;
+  font-size: small;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sectionp__carte .epd__carte--prix {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-left: auto;
+  padding-right: 10px;
+}
+
+.sectionp__carte .epd__carte--check {
+  background-color: #99e2d0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 1;
+  position: relative;
+  margin-right: -70px;
+  min-width: 70px;
+  height: 70px;
+  -webkit-transition: -webkit-transform 700ms ease-in-out;
+  transition: -webkit-transform 700ms ease-in-out;
+  transition: transform 700ms ease-in-out;
+  transition: transform 700ms ease-in-out, -webkit-transform 700ms ease-in-out;
+}
+
+.sectionp__carte .epd__carte--check i {
+  color: white;
+  font-size: 30px;
+}
+
+.sectionp__carte .epd__carte:hover .epd__carte--check {
+  opacity: 1;
+  margin-right: 0px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.sectionp__carte .epd__carte:hover .epd__carte--check i {
+  -webkit-transform: rotate(-360deg);
+          transform: rotate(-360deg);
+  -webkit-transition: -webkit-transform 1000ms ease-in-out;
+  transition: -webkit-transform 1000ms ease-in-out;
+  transition: transform 1000ms ease-in-out;
+  transition: transform 1000ms ease-in-out, -webkit-transform 1000ms ease-in-out;
+}
+
+.sectionp .button {
+  padding: 15px 25px 15px 25px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 50px;
+  border: none;
+  font-family: Roboto;
+  font-weight: bold;
+  background: #9356dc;
+  background: linear-gradient(350deg, #9356dc 0%, #ff79da 100%);
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  width: 50%;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 footer {

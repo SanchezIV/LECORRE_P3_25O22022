@@ -62,12 +62,10 @@ section {
 }
 .sectionp{
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     
     img {
         width: 100%;
+        object-fit: cover;
         overflow: hidden;
         border-radius: 0;
     }
@@ -89,16 +87,20 @@ section {
             font-family: Shrikhand;
             text-align: center;
             }
-            .coeur {
-                font-size: 30px;
-                background-image: radial-gradient(circle,red 0%, #0088b5 100%);
-                background-position:center;
-                background-size:600% 600%; /*a big size to see only the red*/
-                text-decoration: none;
-                transition: all 0.3s ease-in-out;
 
+            .fa-heart {
+                font-weight: 200;
+                font-size: 30px;
+                color: black; 
+                transition: 1s ease-in-out;
+                background-image: radial-gradient(circle, purple, pink);
+                -webkit-background-clip: text;
+                -moz-background-clip: text;
+                background-clip: text;
+                
                 &:hover {
-                    background-size:150% 150%; /* reduce the size to see the gadient effect*/
+                    color: transparent;
+                    transition:1s ease-in-out;
                     font-weight: 600;
                 }
             }
@@ -122,7 +124,7 @@ section {
                     content: '';
                     position: absolute;
                     background-color: $color-tertiaire;
-                    width: 15%;
+                    width: 17%;
                     height: 3px;
                     bottom: 0;
                     left: 0;
@@ -196,7 +198,7 @@ section {
                     position: relative;
                     margin-right: -70px;                  
                     min-width: 70px;
-                    height: 70px;
+                    height: 80px;
                     transition: transform 700ms ease-in-out;
                     
                     i {
@@ -218,7 +220,17 @@ section {
             }          
         }
     }
+
     .button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+
+        
+        
+
+        .button__link {
         padding: 15px 25px 15px 25px;
         box-sizing: border-box;
         border-radius: 50px;
@@ -237,5 +249,13 @@ section {
         width: 50%;
         text-align: center;
         margin-bottom: 20px;
+        display: block;
+        box-shadow: 2px 5px 7px rgb(192, 187, 187);
+        
+            &:hover {
+            box-shadow: 2px 5px 7px rgb(109, 109, 109);
+            }
+        }
     }
+    
 }

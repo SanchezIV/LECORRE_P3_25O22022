@@ -298,20 +298,12 @@ section .carte__text .fa-regular:hover {
 
 .sectionp {
   padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .sectionp img {
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   overflow: hidden;
   border-radius: 0;
 }
@@ -341,20 +333,21 @@ section .carte__text .fa-regular:hover {
   text-align: center;
 }
 
-.sectionp__carte--titre .coeur {
+.sectionp__carte--titre .fa-heart {
+  font-weight: 200;
   font-size: 30px;
-  background-image: radial-gradient(circle, red 0%, #0088b5 100%);
-  background-position: center;
-  background-size: 600% 600%;
-  /*a big size to see only the red*/
-  text-decoration: none;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  color: black;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+  background-image: radial-gradient(circle, purple, pink);
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
-.sectionp__carte--titre .coeur:hover {
-  background-size: 150% 150%;
-  /* reduce the size to see the gadient effect*/
+.sectionp__carte--titre .fa-heart:hover {
+  color: transparent;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
   font-weight: 600;
 }
 
@@ -378,7 +371,7 @@ section .carte__text .fa-regular:hover {
   content: '';
   position: absolute;
   background-color: #99e2d0;
-  width: 15%;
+  width: 17%;
   height: 3px;
   bottom: 0;
   left: 0;
@@ -462,7 +455,7 @@ section .carte__text .fa-regular:hover {
   position: relative;
   margin-right: -70px;
   min-width: 70px;
-  height: 70px;
+  height: 80px;
   -webkit-transition: -webkit-transform 700ms ease-in-out;
   transition: -webkit-transform 700ms ease-in-out;
   transition: transform 700ms ease-in-out;
@@ -491,6 +484,18 @@ section .carte__text .fa-regular:hover {
 }
 
 .sectionp .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sectionp .button .button__link {
   padding: 15px 25px 15px 25px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -506,6 +511,14 @@ section .carte__text .fa-regular:hover {
   width: 50%;
   text-align: center;
   margin-bottom: 20px;
+  display: block;
+  -webkit-box-shadow: 2px 5px 7px #c0bbbb;
+          box-shadow: 2px 5px 7px #c0bbbb;
+}
+
+.sectionp .button .button__link:hover {
+  -webkit-box-shadow: 2px 5px 7px #6d6d6d;
+          box-shadow: 2px 5px 7px #6d6d6d;
 }
 
 footer {

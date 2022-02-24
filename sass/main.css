@@ -215,11 +215,17 @@ header .text__description--bouton .button .button__link {
   display: block;
   -webkit-box-shadow: 2px 5px 7px #c0bbbb;
           box-shadow: 2px 5px 7px #c0bbbb;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
 }
 
 header .text__description--bouton .button .button__link:hover {
   -webkit-box-shadow: 2px 5px 7px #6d6d6d;
           box-shadow: 2px 5px 7px #6d6d6d;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
 }
 
 .header__page {
@@ -280,10 +286,16 @@ nav .navigation__button {
   border-radius: 15px;
   -webkit-box-shadow: 5px 2px 10px #cfcece;
           box-shadow: 5px 2px 10px #cfcece;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
 }
 
 nav .navigation__button:hover {
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
   background-color: #f5edff;
+  -webkit-box-shadow: 5px 2px 10px #8b8b8b;
+          box-shadow: 5px 2px 10px #8b8b8b;
 }
 
 nav .navigation__button--text {
@@ -327,6 +339,8 @@ section h1 {
 }
 
 section .carte {
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
   border-radius: 15px;
   text-decoration: none;
   color: black;
@@ -335,6 +349,15 @@ section .carte {
   margin-bottom: 20px;
   -webkit-box-shadow: 5px 2px 10px #cfcece;
           box-shadow: 5px 2px 10px #cfcece;
+}
+
+section .carte:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+  -webkit-box-shadow: 5px 2px 10px #777777;
+          box-shadow: 5px 2px 10px #777777;
 }
 
 section .carte__text {
@@ -701,11 +724,17 @@ section .carte__text .fa-heart .coeur .fa-solid {
   display: block;
   -webkit-box-shadow: 2px 5px 7px #c0bbbb;
           box-shadow: 2px 5px 7px #c0bbbb;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
 }
 
 .sectionp .bouton .button .button__link:hover {
   -webkit-box-shadow: 2px 5px 7px #6d6d6d;
           box-shadow: 2px 5px 7px #6d6d6d;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
 }
 
 footer {

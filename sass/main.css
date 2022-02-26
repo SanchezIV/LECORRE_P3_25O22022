@@ -598,8 +598,6 @@ section .carte__text .fa-heart .coeur .fa-solid {
 
 .sectionp__carte .epd {
   width: 100%;
-  -webkit-animation: Slidedown 2s;
-          animation: Slidedown 2s;
 }
 
 .sectionp__carte .epd h2 {

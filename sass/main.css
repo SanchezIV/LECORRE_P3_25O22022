@@ -338,6 +338,26 @@ section h1 {
   margin: 20px 0;
 }
 
+section .carte1 {
+  -webkit-animation: Slidedown 1s;
+          animation: Slidedown 1s;
+}
+
+section .carte2 {
+  -webkit-animation: Slidedown 1.5s;
+          animation: Slidedown 1.5s;
+}
+
+section .carte3 {
+  -webkit-animation: Slidedown 2s;
+          animation: Slidedown 2s;
+}
+
+section .carte4 {
+  -webkit-animation: Slidedown 2.5s;
+          animation: Slidedown 2.5s;
+}
+
 section .carte {
   -webkit-transition: 1s ease;
   transition: 1s ease;
@@ -561,8 +581,25 @@ section .carte__text .fa-heart .coeur .fa-solid {
   transition: 0.5s ease-out;
 }
 
+.sectionp__carte .epd1 {
+  -webkit-animation: Slidedown 1s;
+          animation: Slidedown 1s;
+}
+
+.sectionp__carte .epd2 {
+  -webkit-animation: Slidedown 1.5s;
+          animation: Slidedown 1.5s;
+}
+
+.sectionp__carte .epd3 {
+  -webkit-animation: Slidedown 2s;
+          animation: Slidedown 2s;
+}
+
 .sectionp__carte .epd {
   width: 100%;
+  -webkit-animation: Slidedown 2s;
+          animation: Slidedown 2s;
 }
 
 .sectionp__carte .epd h2 {
@@ -590,6 +627,21 @@ section .carte__text .fa-heart .coeur .fa-solid {
 .sectionp__carte .epd a {
   text-decoration: none;
   color: black;
+}
+
+.sectionp__carte .epd_carte1 {
+  -webkit-animation: Slidedown 2s;
+          animation: Slidedown 2s;
+}
+
+.sectionp__carte .epd__carte2 {
+  -webkit-animation: Slidedown 2.5s;
+          animation: Slidedown 2.5s;
+}
+
+.sectionp__carte .epd__carte3 {
+  -webkit-animation: Slidedown 3s;
+          animation: Slidedown 3s;
 }
 
 .sectionp__carte .epd__carte {
@@ -735,6 +787,32 @@ section .carte__text .fa-heart .coeur .fa-solid {
   transition: .5s ease;
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
+}
+
+@-webkit-keyframes Slidedown {
+  from {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes Slidedown {
+  from {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 footer {

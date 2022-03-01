@@ -3,6 +3,12 @@ $color-secondaire: #ff79da;
 $color-tertiaire: #99e2d0;
 $bg-color: white;
 
+@mixin texte-main {
+  font-size: 17px;
+  font-family: Roboto;
+  font-weight: 400;
+}
+
 @mixin titre-footer {
     color: #fff;
     font-size: 17px;
@@ -10,6 +16,7 @@ $bg-color: white;
     margin: 0px 0px 10px 0px;
     font-weight: 100;
   }
+
 
 @mixin button {
   .button {

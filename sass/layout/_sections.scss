@@ -18,6 +18,7 @@ section {
         animation: Slidedown 2.5s;
     }
     .carte {
+        position: relative;
         transition: 1s ease;
         border-radius: 15px;
         text-decoration: none;
@@ -26,6 +27,17 @@ section {
         display: block;
         margin-bottom: 20px;
         box-shadow: 5px 2px 10px rgb(207, 206, 206);
+        
+        .new {
+            background-color: $color-tertiaire;
+            @include texte-main;
+            padding: 5px 10px;
+            position: absolute;
+            right: 20px;
+            color: #3b9e85;
+            top: 10px;
+            font-weight: 600;
+          }
         
 
         &:hover {
@@ -63,6 +75,7 @@ section {
         }
     }
 }
+
 .sectionp{
     padding: 0;
     

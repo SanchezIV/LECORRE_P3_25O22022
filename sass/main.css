@@ -272,7 +272,7 @@ nav {
   padding: 20px;
 }
 
-nav h1 {
+nav h2 {
   margin: 40px 0;
 }
 
@@ -335,7 +335,7 @@ section {
   padding: 20px;
 }
 
-section h1 {
+section h2 {
   margin: 20px 0;
 }
 
@@ -410,9 +410,9 @@ section .carte__text {
   border-radius: 0 0 15px 15px;
 }
 
-section .carte__text--name h1 {
+section .carte__text--name h2 {
   margin: 0;
-  font-size: 17px;
+  font-size: 20px;
 }
 
 section .carte__text--name p {

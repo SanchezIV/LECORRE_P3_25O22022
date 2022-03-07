@@ -118,7 +118,7 @@ section {
         .epd3 {
             animation: Slidedown 2s;
         }
-
+       
         .epd {
             width: 100%;
 
@@ -156,6 +156,9 @@ section {
             }
             &__carte3 {
                 animation: Slidedown 3s;
+            }
+            &__carte4 {
+                animation: Slidedown 3.5s;
             }
 
             &__carte {

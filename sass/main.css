@@ -657,6 +657,11 @@ section .carte__text .fa-heart .coeur .fa-solid {
           animation: Slidedown 3s;
 }
 
+.sectionp__carte .epd__carte4 {
+  -webkit-animation: Slidedown 3.5s;
+          animation: Slidedown 3.5s;
+}
+
 .sectionp__carte .epd__carte {
   background-color: white;
   border-radius: 15px;
@@ -1114,9 +1119,11 @@ footer .liens i {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    position: relative;
   }
   nav .navigation__button--text .notif {
-    display: none;
+    position: absolute;
+    left: -20px;
   }
   nav .navigation__button--text p {
     margin-right: 10px;
@@ -1153,7 +1160,6 @@ footer .liens i {
   section .section__carte .carte {
     margin: 20px 0;
     width: 43vw;
-    height: 30vh;
   }
   section .section__carte .carte__text {
     height: 25%;

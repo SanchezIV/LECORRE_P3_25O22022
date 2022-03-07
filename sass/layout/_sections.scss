@@ -229,13 +229,13 @@ section {
                     }
                 }
  
-                &:active .epd__carte--check {
+                &:hover .epd__carte--check {
                     opacity: 1;
                     margin-right: 0px;
                     transition: all 0.5s;
                     
                 }
-                &:active .epd__carte--check i {
+                &:hover .epd__carte--check i {
                     transform: rotate(-360deg);
                     transition: transform 1000ms ease-in-out;
                 }

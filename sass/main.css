@@ -50,20 +50,20 @@ h2 {
           justify-content: center;
 }
 
-.coeur:active .fa-heart {
+.coeur:hover .fa-heart {
   font-size: 40px;
   border: 4px solid #ffa7e2;
   border-style: double;
   border-radius: 100%;
 }
 
-.coeur:active .fa-regular {
+.coeur:hover .fa-regular {
   opacity: 0;
   -webkit-transition: 0.5s ease-out;
   transition: 0.5s ease-out;
 }
 
-.coeur:active .fa-solid {
+.coeur:hover .fa-solid {
   width: 46px;
   height: 46px;
   border-radius: 1000%;
@@ -435,20 +435,20 @@ section .carte__text .fa-heart .coeur {
           justify-content: center;
 }
 
-section .carte__text .fa-heart .coeur:active .fa-heart {
+section .carte__text .fa-heart .coeur:hover .fa-heart {
   font-size: 40px;
   border: 4px solid #ffa7e2;
   border-style: double;
   border-radius: 100%;
 }
 
-section .carte__text .fa-heart .coeur:active .fa-regular {
+section .carte__text .fa-heart .coeur:hover .fa-regular {
   opacity: 0;
   -webkit-transition: 0.5s ease-out;
   transition: 0.5s ease-out;
 }
 
-section .carte__text .fa-heart .coeur:active .fa-solid {
+section .carte__text .fa-heart .coeur:hover .fa-solid {
   width: 46px;
   height: 46px;
   border-radius: 1000%;
@@ -540,20 +540,20 @@ section .carte__text .fa-heart .coeur .fa-solid {
           justify-content: center;
 }
 
-.sectionp__carte--titre .fa-heart .coeur:active .fa-heart {
+.sectionp__carte--titre .fa-heart .coeur:hover .fa-heart {
   font-size: 40px;
   border: 4px solid #ffa7e2;
   border-style: double;
   border-radius: 100%;
 }
 
-.sectionp__carte--titre .fa-heart .coeur:active .fa-regular {
+.sectionp__carte--titre .fa-heart .coeur:hover .fa-regular {
   opacity: 0;
   -webkit-transition: 0.5s ease-out;
   transition: 0.5s ease-out;
 }
 
-.sectionp__carte--titre .fa-heart .coeur:active .fa-solid {
+.sectionp__carte--titre .fa-heart .coeur:hover .fa-solid {
   width: 46px;
   height: 46px;
   border-radius: 1000%;
@@ -747,14 +747,14 @@ section .carte__text .fa-heart .coeur .fa-solid {
   font-size: 30px;
 }
 
-.sectionp__carte .epd__carte:active .epd__carte--check {
+.sectionp__carte .epd__carte:hover .epd__carte--check {
   opacity: 1;
   margin-right: 0px;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
-.sectionp__carte .epd__carte:active .epd__carte--check i {
+.sectionp__carte .epd__carte:hover .epd__carte--check i {
   -webkit-transform: rotate(-360deg);
           transform: rotate(-360deg);
   -webkit-transition: -webkit-transform 1000ms ease-in-out;

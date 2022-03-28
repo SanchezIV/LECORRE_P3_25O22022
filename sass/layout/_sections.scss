@@ -5,8 +5,8 @@ section {
     h2 {
         margin: 20px 0;
     }
-    .carte1 {
-        animation: Slidedown 1s;
+    .carte1 {   /*les cartes ont toutes la meme animation avec un leger décallage */
+        animation: Slidedown 1s;  /*animation des cartes a leur arrivé a l'ecran */
     }
     .carte2 {
         animation: Slidedown 1.5s;
@@ -109,7 +109,7 @@ section {
             }
         }
         
-        .epd1 {
+        .epd1 {  /*les sections entrée, plats et dessert des cartes arrivent progressivement */
             animation: Slidedown 1s;
         }
         .epd2 {
@@ -218,7 +218,7 @@ section {
                     align-items: center;                    
                     opacity: 1;
                     position: relative;
-                    margin-right: -70px;                  
+                    margin-right: -70px;       /*de base l'icone "tchek" et sa boite sont cachés sur la droite du boutton*/           
                     min-width: 70px;
                     height: 80px;
                     transition: transform 700ms ease-in-out;
@@ -231,12 +231,12 @@ section {
  
                 &:hover .epd__carte--check {
                     opacity: 1;
-                    margin-right: 0px;
-                    transition: all 0.5s;
+                    margin-right: 0px;  /*Au passage de la souris l'icone "tchek" et sa boite verte arrivent de la droit de l'ecran */
+                    transition: all 0.5s; /*Ils arrivent en 0.5s progressivement*/
                     
                 }
                 &:hover .epd__carte--check i {
-                    transform: rotate(-360deg);
+                    transform: rotate(-360deg); /*au passage de la souris l'icone tourne a 360deg */
                     transition: transform 1000ms ease-in-out;
                 }
             }          
@@ -247,7 +247,7 @@ section {
       @include button;
     }
 }
-@keyframes Slidedown {
+@keyframes Slidedown { /*Animation d'apparition progressive des cartes et menus */
     from {
       transform: translateY(30px);
         opacity: 0;

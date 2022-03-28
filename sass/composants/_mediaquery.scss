@@ -1,12 +1,12 @@
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {  /*Rien en version tablette car résultat déja agréable à l'oeil */
    
     
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 992px) {  /*Version desktop */
     header {
         img {
-            max-width: 20%;
+            max-width: 20%; /*réduction de l'img pour garder la qualité */
         }
     
         .text {
@@ -148,9 +148,9 @@
         position: relative;
             
         img {
-            z-index: -1;
+            z-index: -1; /*l'image passe derriere les autres éléments */
             position: absolute;
-            height: 100vh;
+            height: 100vh;  /*l'img du plat devient le fond */
         }
         
         &__carte {
@@ -165,11 +165,11 @@
         
                 h1 {
                     font-size: 40px;
-                    text-shadow: 1px 1px 6px $color-tertiaire;
+                    text-shadow: 1px 1px 6px $color-tertiaire; /* rajout d'une ombre au texte pour un meilleur contraste*/
                 }
         
                 .fa-heart {
-                    transform: scale(2);
+                    transform: scale(2); /*doubble taille de l'icone */ 
                 }
             }
                 

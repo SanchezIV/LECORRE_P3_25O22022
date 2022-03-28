@@ -1,6 +1,6 @@
 .coeur {
     display: flex;
-    align-items: center;
+    align-items: center;     /* alignement des icones sur les axe x et Y */
     justify-content: center;
 
     &:hover {
@@ -11,14 +11,14 @@
             border-radius: 100%;
         }
         .fa-regular {
-            opacity: 0;
+            opacity: 0;  /* au passage de la souris, le coeur vide disparait */ 
             transition: 0.5s ease-out;
         }
         .fa-solid {
-            width: 46px;
+            width: 46px;  /*le coeur plein obtient des dimensions et devient donc visible */ 
             height: 46px;
-            border-radius: 1000%;
-            transition: 0.5s ease-in;
+            border-radius: 1000%;   /* le coeur plein apparait en radial */
+            transition: 0.5s ease-in;  /* il apparait en 0.5s doucement */ 
             opacity: 1;
             position: absolute;
         }
@@ -27,9 +27,9 @@
    .fa-heart {
     font-size: 30px;
    }
-    .fa-regular {
-    position: absolute;
-    opacity: 1;
+    .fa-regular {  
+    position: absolute; /* les icones sont en absolute pour se superposer */
+    opacity: 1;  /*l'icone contour s'affiche au dessus du coeur plein */ 
     transition: 0.5s ease-in;
     }
     .fa-solid {
@@ -37,8 +37,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        opacity: 1;
-        width: 0;
+        opacity: 1;   
+        width: 0;  /* hauteur et largeur nulle pour ne pas apparaitre */ 
         height: 0;
         background: -moz-linear-gradient(top, #ff79da 15%, #9356dc 100%);
         background: -webkit-linear-gradient(top, #ff79da 15%, #9356dc 100%);
